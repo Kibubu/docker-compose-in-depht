@@ -1,0 +1,7 @@
+services:
+  update-references:
+    build: .
+    command: "find . -iname '.source' -execdir sh -c 'curl $(cat \"$1\") -o README.md' sh {} \\;"
+    volumes:
+      - .:/repo
+    working_dir: "/repo"
