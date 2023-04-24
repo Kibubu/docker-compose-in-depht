@@ -1,5 +1,5 @@
 ---
-tags: docker-compose, for-public, bloc, how-to, notes, locked
+tags: docker-compose, for-public, blog, how-to, notes, locked
 
 ---
 
@@ -7,19 +7,17 @@ tags: docker-compose, for-public, bloc, how-to, notes, locked
 
 ## TLDR;
 
-You should use docker compose for all container that are not meant to be executed only once.
-
-## Notes
+With *docker compose* you are able to build, start, and stop containers with a simple interface than docker. A composition removes the hassle to remember the exact `docker run` and simplifies reproducible executions. 
 
 ## Abstract
 
-This document aims to highlight the many benefits of utilizing Docker Compose as the primary tool for interacting and working with Docker containers. Compose offers a simplified command line interface that enhances productivity and eliminates the need to rely on Docker's interface for every reused container. For one-shot containers, Docker's interface can still be used without any additional overhead. By leveraging Docker Compose in this way, users can efficiently manage and scale containers while streamlining their overall workflow.
+This document aims to highlight the many benefits of utilizing Docker Compose as the primary tool for interacting and working with Docker containers. Compose offers a simplified command line interface that enhances productivity and eliminates the need to rely on Docker's interface for every reused container. For one-shot containers, Docker's interface can still be used without any additional overhead. But bu leveraging Docker Compose, users can efficiently manage and scale containers while streamlining their overall workflow.
 
 ## Problem
 
 Developers often face challenges while using Docker's command line interface (CLI) for container management, even when working with single containers or particularly when dealing with complex dependencies between multiple containers. Some of these challenges include:
 
-1. Complexity in Docker CLI: Although Docker CLI is a powerful tool, its commands and syntax can be complex and difficult to remember, especially for those new to containerization.
+1. Complexity in Docker CLI: Although Docker CLI is a powerful tool, its commands and syntax can be complex and difficult to remember, especially for those new to containerization or after some time.
 
 2. Difficulty in managing complex dependencies: When multiple containers have intricate dependencies and relationships, managing them with Docker CLI becomes more challenging, leading to increased chances of errors and misconfigurations.
 
