@@ -1,5 +1,5 @@
 ---
-tags: docker-compose, for-public, blog, how-to, notes, locked
+tags: docker-compose, deep-dive, for-public, blog, how-to, notes, locked
 
 ---
 
