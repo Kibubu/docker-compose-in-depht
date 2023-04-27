@@ -1,0 +1,14 @@
+name: "project"
+services:
+  web:
+    image: "ubuntu:${WEB_IMAGE_VERSION}"
+    # image: "ubuntu:${WEB_IMAGE_VERSION:-latest}"
+    # image: "ubuntu:${WEB_IMAGE_VERSION:?error}"
+    # image: "ubuntu:${WEB_IMAGE_VERSION:?asdf asdf}"
+    # image: "ubuntu:${WEB_IMAGE_VERSION:?${WEB_PORT}}"
+    # image: "ubuntu:${WEB_IMAGE_VERSION:?}"
+    # image: "ubuntu${WEB_IMAGE_VERSION:+:${WEB_IMAGE_VERSION}}"
+    ports:
+      - "${WEB_PORT}:5000"
+      # - "${WEB_IMAGE_VERSION:+8000}:5000"
+    command: env
